@@ -20,7 +20,7 @@
     #text(size: 17pt, title)
     #par[#author.name \ #author.email ]
   ])
-  block(inset: (left: 0.5in, right: 0.5in), [*_Abstract_*---#abstract])
+  if abstract != none { block(inset: (x: 0.5in))[*_Abstract_*---#abstract] }
 
   show link: it => text(fill: blue, it)
   show figure.caption: it => {
