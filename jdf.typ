@@ -26,7 +26,7 @@
   show figure.caption: it => {
     block(inset: (left: 1in, right: 1in), [
       #align(left, [
-        #text(size: 8.5pt, weight: "bold", style: "italic", [Figure #context[#it.counter.display()]])—#text(size: 8.5pt, it.body) 
+        #text(size: 8.5pt, weight: "bold", style: "italic", [#it.supplement #context[#it.counter.display()]])—#text(size: 8.5pt, it.body)
       ])
     ])
   }
@@ -42,6 +42,14 @@
   show quote: it => {
     block(inset: (left: 0.5in, right: 0.5in), it)
   }
+
+  show table.cell: set text(8.5pt)
+  show figure.where(kind: table): set figure.caption(position: top)
+  show table.cell.where(y: 0): set text(style: "normal", weight: "bold")
+  set table(stroke: (_, y) => {
+    if y == 1 { (top: 0.5pt )}
+    if y > 1 { (top: 0.25pt) }
+  })
 
   body
 }

@@ -105,6 +105,19 @@ Table captions should be formatted the same way as figure captions, but they sho
 The popular mnemonic for this is: figures at the foot, tables at the top.
 Like figures, tables should not exceed the margins and should be centered on the page.
 
+#figure(
+  table(
+    columns: 4,
+    align: (left, center, center, left),
+    table.header[Name][Symbol][Approximation][Description],
+    [Golden ratio], [#sym.phi], [1.618], [Number such that the ratio of " to the number is equal to the ratio of its reciprocal to 1],
+    [Euler's number], [$e$], [2.71828], [Exponential growth constant],
+    [Archimedes' constant], [#sym.pi], [3.14], [The ratio between circumference and diameter of a circle],
+    [One hundred], [A+], [100.00], [The grade we hope you'll all earn in this class],
+  ),
+  caption: [Mathematical constants. Notice how the approximations align at the decimal.]
+)
+
 == Additional elements
 There are additional elements you may want to include in your paper, such as in-line or block quotes, lists, and more.
 For other content types not covered here, you have flexibility in determining how it should be used in this format.
