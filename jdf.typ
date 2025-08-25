@@ -39,8 +39,10 @@
     else { block(inset: (top: 8.5pt, bottom: 8.5pt), text(weight: "bold", style: "italic", it)) } 
   }
 
-  show quote: it => {
-    block(inset: (left: 0.5in, right: 0.5in), it)
+  show quote.where(block: true): set pad(x: 0.5in)
+  show quote.where(block: false): it => {
+    ["] + h(0pt, weak: true) + it.body + h(0pt, weak: true) + ["]
+    if it.attribution != none [ #it.attribution]
   }
 
   show table.cell: set text(8.5pt)
