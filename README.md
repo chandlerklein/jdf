@@ -42,4 +42,4 @@ Please note that the abstract is completely optional:
   ),
   abstract: [My abstract]
 )
-```typst
+```
