@@ -17,7 +17,7 @@ typst compile jdf-starter.typ
 
 The result should look like `jdf-starter.pdf`.
 
-## Adding jdf.cls to Global TeX
+## Adding jdf.typ machine-wide
 
 Please see the Typst instructions to add the configuration machine-wide [here](https://github.com/typst/packages?tab=readme-ov-file#local-packages).
 
