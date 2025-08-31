@@ -9,13 +9,19 @@ Please see the Typst installation instructions [here](https://github.com/typst/t
 ## Typst CLI Quick start
 
 You can clone this repo and try typesetting `jdf-starter.typ`
-with the following commands:
+with the following command:
 
 ```sh
 typst compile jdf-starter.typ
 ```
 
-The result should look like `jdf-starter.pdf`.
+The result should look like `jdf-starter.pdf`. To automatically re-compile whenever changes are saved to your document, run the following command:
+
+```sh
+typst watch jdf-starter.typ
+```
+```
+```
 
 ## Adding jdf.typ machine-wide
 
