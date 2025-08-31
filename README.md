@@ -20,7 +20,6 @@ The result should look like `jdf-starter.pdf`. To automatically re-compile whene
 ```sh
 typst watch jdf-starter.typ
 ```
-```
 
 ## Adding jdf.typ machine-wide
 
