@@ -1,6 +1,6 @@
 # Typst Joyner Document Format
 
-Welcome to the Typst version of the **2022 update** of the Joyner Document Format.
+Welcome to the Typst version of the **2022 update** of the [Joyner Document Format](https://github.com/iamjakewarner/jdf).
 
 ## Typst Installation
 
