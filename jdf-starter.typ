@@ -1,4 +1,5 @@
-#import "jdf.typ": conf
+#import "jdf.typ": *
+
 #show: conf.with(
   title: [
     Joyner Document Format v2.2:\ For Use in CS6460, CS6750, and CS 7637
