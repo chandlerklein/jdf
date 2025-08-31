@@ -171,7 +171,7 @@ If multiple papers have the same author(s), list them in chronological order sta
 Only works that are cited in-line should be included in the reference list.
 The reference list does not count against the length requirements.
 
-#bibliography("references.bib", style: "american-psychological-association", title: "references")
+#bibliography("references.bib", title: "references")
 
 = Appendices
 You may optionally move certain information to appendices at the end of your paper, after the reference list.

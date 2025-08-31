@@ -57,5 +57,8 @@
     if y > 1 { (top: 0.25pt) }
   })
 
+  show bibliography: set heading(numbering: "1")
+  set bibliography(style: "american-psychological-association")
+
   body
 }
