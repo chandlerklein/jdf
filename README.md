@@ -23,7 +23,7 @@ typst watch jdf-starter.typ
 
 ## Use jdf.typ machine-wide (recommended)
 
-Please see the Typst instructions to add the configuration machine-wide [here](https://github.com/typst/packages?tab=readme-ov-file#local-packages). This process is temporary until the Typst JDF configuration has been submitted to the Typst Universe as a Typst package.
+Please see the Typst instructions to add the configuration machine-wide [here](https://github.com/typst/packages?tab=readme-ov-file#local-packages). This process is temporary until I've submitted the Typst JDF configuration to the Typst Universe as a Typst package (probably will get around to it mid-to-late September).
 
 ## Use jdf.typ locally
 
