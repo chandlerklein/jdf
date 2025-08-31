@@ -8,8 +8,8 @@
     numbering: "1",
     footer-descent: 0.5in
   )
-  set par(justify: true)
   set text(font: "Palatino", size: 11pt)
+  set par(justify: true, spacing: 16pt, leading: 0.85em)
 
   show footnote.entry: it => {
     text(6.5pt, numbering("1 ", ..counter(footnote).at(it.note.location())))
@@ -34,12 +34,16 @@
   set heading(numbering: "1.1.1")
   show heading: it => {
     set text(11pt)
-    if it.level == 1 { block(inset: (top: 11pt, bottom: 8.5pt), upper(it)) } 
-    else if it.level == 2 { block(inset: (top: 8.5pt, bottom: 8.5pt), it) } 
-    else { block(inset: (top: 8.5pt, bottom: 8.5pt), text(weight: "bold", style: "italic", it)) } 
+    if it.level == 1 { block(above: 18pt, below: 18pt, upper(text(tracking: 0.5pt, it))) }
+    else if it.level == 2 { block(above: 18pt, below: 18pt, it) }
+    else if it.level == 3 { block(above: 18pt, below: 18pt, text(style: "italic", it)) }
+    else { text(weight: "bold", style: "italic", it.body + [—]) }
   }
 
-  show quote.where(block: true): set pad(x: 0.5in)
+  show quote.where(block: true): it => {
+    set pad(x: 0.5in)
+    block(above: 18pt, below: 18pt, it)
+  }
   show quote.where(block: false): it => {
     ["] + h(0pt, weak: true) + it.body + h(0pt, weak: true) + ["]
     if it.attribution != none [ #it.attribution]

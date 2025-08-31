@@ -15,7 +15,7 @@ All text in JDF should be set in the Palatino typeface.
 It is available practically everywhere as a system font: Google Docs offers a version called _Palatino Linotype_.
 It comes in regular and bold weights with matching italics.
 
-#align(center, text(size: 21pt, "Handgloves"))
+#align(center, block(below: 8pt, text(size: 21.5pt, "Handgloves")))
 #figure(
   image("Figures/Handgloves.png", height: 0.77cm), 
   caption: [Palatino. Make sure the live text (top) uses the same font as the image (bottom).]
@@ -53,13 +53,13 @@ Headings should not span more than one line.
 _Heading 1_ should be set in all caps.
 It should have 11 points of space added before and 8.5 points of space added after
 
-=== Headings 2—4
+=== Headings 2–4
 Besides _Heading 1_, which is set in caps, headings should always use sentence case (i.e., first word capitalized) rather than title case; after all, they are not titles.
 
 _Heading 2_ should be set in bold roman (upright), and _Heading 3_ should be set in bold italics.
 The use of headings beyond _Heading 3_ is discouraged.
 
-=== Heading 4
+==== Heading 4
 _Heading 4_ is provided as a run-in sidehead.
 Like _Heading 3_, it is set in bold italics, but it should be followed by an em dash and flow right into the text, as seen at the beginning of the current paragraph.
 It should be used more as a list style than a heading style, e.g. to set off a list of principles in a heuristic evaluation.
